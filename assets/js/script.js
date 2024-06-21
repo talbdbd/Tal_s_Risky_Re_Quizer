@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     saveScoreForm.addEventListener('submit', saveScore);
 
     function startQuiz() {
+        console.log('Start Quiz button clicked'); // Add this line
         startButton.classList.add('hide');
         quizContainer.classList.remove('hide');
         shuffledQuestions = questions.sort(() => Math.random() - 0.5);

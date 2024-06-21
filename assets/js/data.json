@@ -1,0 +1,38 @@
+[
+    {
+        "question": "What is the correct syntax for referring to an external script called \"xxx.js\"?",
+        "answers": [
+            { "text": "<script name=\"xxx.js\">", "correct": false },
+            { "text": "<script src=\"xxx.js\">", "correct": true },
+            { "text": "<script href=\"xxx.js\">", "correct": false },
+            { "text": "<script file=\"xxx.js\">", "correct": false }
+        ]
+    },
+    {
+        "question": "How do you write \"Hello World\" in an alert box?",
+        "answers": [
+            { "text": "msg(\"Hello World\");", "correct": false },
+            { "text": "alertBox(\"Hello World\");", "correct": false },
+            { "text": "alert(\"Hello World\");", "correct": true },
+            { "text": "msgBox(\"Hello World\");", "correct": false }
+        ]
+    },
+    {
+        "question": "How do you create a function in JavaScript?",
+        "answers": [
+            { "text": "function = myFunction()", "correct": false },
+            { "text": "function myFunction()", "correct": true },
+            { "text": "function:myFunction()", "correct": false },
+            { "text": "function => myFunction()", "correct": false }
+        ]
+    },
+    {
+        "question": "How to write an IF statement in JavaScript?",
+        "answers": [
+            { "text": "if i == 5 then", "correct": false },
+            { "text": "if i = 5 then", "correct": false },
+            { "text": "if (i == 5)", "correct": true },
+            { "text": "if (i = 5)", "correct": false }
+        ]
+    }
+]
