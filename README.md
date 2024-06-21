@@ -23,6 +23,7 @@ No installation required! It will immediately run on the browser!
 ## Usage
 
 Take a look at the main page!
+![Quiz Screenshot](assets/images/Screenshot%202024-06-21%20at%203.48.34 PM.png)
 
 ## Credits
 

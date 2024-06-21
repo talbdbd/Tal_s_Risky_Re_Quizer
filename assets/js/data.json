@@ -1,52 +1,38 @@
 [
     {
-        "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",
-        "answers": ["<script src='xxx.js'>", "<script href='xxx.js'>", "<script name='xxx.js'>", "<script file='xxx.js'>"],
-        "correctAnswer": "<script src='xxx.js'>"
+        "question": "What is the correct syntax for referring to an external script called \"xxx.js\"?",
+        "answers": [
+            { "text": "<script name=\"xxx.js\">", "correct": false },
+            { "text": "<script src=\"xxx.js\">", "correct": true },
+            { "text": "<script href=\"xxx.js\">", "correct": false },
+            { "text": "<script file=\"xxx.js\">", "correct": false }
+        ]
     },
     {
-        "question": "How do you write 'Hello World' in an alert box?",
-        "answers": ["msg('Hello World');", "alertBox('Hello World');", "alert('Hello World');", "msgBox('Hello World');"],
-        "correctAnswer": "alert('Hello World');"
+        "question": "How do you write \"Hello World\" in an alert box?",
+        "answers": [
+            { "text": "msg(\"Hello World\");", "correct": false },
+            { "text": "alertBox(\"Hello World\");", "correct": false },
+            { "text": "alert(\"Hello World\");", "correct": true },
+            { "text": "msgBox(\"Hello World\");", "correct": false }
+        ]
     },
     {
         "question": "How do you create a function in JavaScript?",
-        "answers": ["function myFunction()", "function = myFunction()", "function:myFunction()", "func myFunction()"],
-        "correctAnswer": "function myFunction()"
+        "answers": [
+            { "text": "function = myFunction()", "correct": false },
+            { "text": "function myFunction()", "correct": true },
+            { "text": "function:myFunction()", "correct": false },
+            { "text": "function => myFunction()", "correct": false }
+        ]
     },
     {
         "question": "How to write an IF statement in JavaScript?",
-        "answers": ["if i == 5 then", "if i = 5 then", "if i == 5", "if (i == 5)"],
-        "correctAnswer": "if (i == 5)"
-    },
-    {
-        "question": "How does a WHILE loop start?",
-        "answers": ["while (i <= 10; i++)", "while (i <= 10)", "while i = 1 to 10", "while (i++ <= 10)"],
-        "correctAnswer": "while (i <= 10)"
-    },
-    {
-        "question": "How can you add a comment in JavaScript?",
-        "answers": ["<!--This is a comment-->", "'This is a comment", "//This is a comment", "**This is a comment**"],
-        "correctAnswer": "//This is a comment"
-    },
-    {
-        "question": "Which event occurs when the user clicks on an HTML element?",
-        "answers": ["onchange", "onclick", "onmouseover", "onmouseclick"],
-        "correctAnswer": "onclick"
-    },
-    {
-        "question": "How do you declare a JavaScript variable?",
-        "answers": ["var carName;", "v carName;", "variable carName;", "carName: var;"],
-        "correctAnswer": "var carName;"
-    },
-    {
-        "question": "Which operator is used to assign a value to a variable?",
-        "answers": ["*", "=", "-", "+"],
-        "correctAnswer": "="
-    },
-    {
-        "question": "What will the following code return: Boolean(10 > 9)?",
-        "answers": ["NaN", "false", "true", "undefined"],
-        "correctAnswer": "true"
+        "answers": [
+            { "text": "if i == 5 then", "correct": false },
+            { "text": "if i = 5 then", "correct": false },
+            { "text": "if (i == 5)", "correct": true },
+            { "text": "if (i = 5)", "correct": false }
+        ]
     }
 ]
