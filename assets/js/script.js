@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     saveScoreForm.addEventListener('submit', saveScore);
 
     function startQuiz() {
-        console.log('Start Quiz button clicked'); // Add this line
         startButton.classList.add('hide');
         quizContainer.classList.remove('hide');
         shuffledQuestions = questions.sort(() => Math.random() - 0.5);
@@ -147,6 +146,60 @@ document.addEventListener('DOMContentLoaded', () => {
                 { text: 'if i = 5 then', correct: false },
                 { text: 'if (i == 5)', correct: true },
                 { text: 'if (i = 5)', correct: false }
+            ]
+        },
+        {
+            question: 'How does a WHILE loop start?',
+            answers: [
+                { text: 'while (i <= 10; i++)', correct: false },
+                { text: 'while (i <= 10)', correct: true },
+                { text: 'while i = 1 to 10', correct: false },
+                { text: 'while (i++ <= 10)', correct: false }
+            ]
+        },
+        {
+            question: 'How can you add a comment in JavaScript?',
+            answers: [
+                { text: '<!--This is a comment-->', correct: false },
+                { text: "'This is a comment", correct: false },
+                { text: '//This is a comment', correct: true },
+                { text: '**This is a comment**', correct: false }
+            ]
+        },
+        {
+            question: 'Which event occurs when the user clicks on an HTML element?',
+            answers: [
+                { text: 'onchange', correct: false },
+                { text: 'onclick', correct: true },
+                { text: 'onmouseover', correct: false },
+                { text: 'onmouseclick', correct: false }
+            ]
+        },
+        {
+            question: 'How do you declare a JavaScript variable?',
+            answers: [
+                { text: 'var carName;', correct: true },
+                { text: 'v carName;', correct: false },
+                { text: 'variable carName;', correct: false },
+                { text: 'carName: var;', correct: false }
+            ]
+        },
+        {
+            question: 'Which operator is used to assign a value to a variable?',
+            answers: [
+                { text: '*', correct: false },
+                { text: '=', correct: true },
+                { text: '-', correct: false },
+                { text: '+', correct: false }
+            ]
+        },
+        {
+            question: 'What will the following code return: Boolean(10 > 9)?',
+            answers: [
+                { text: 'NaN', correct: false },
+                { text: 'false', correct: false },
+                { text: 'true', correct: true },
+                { text: 'undefined', correct: false }
             ]
         }
     ];
